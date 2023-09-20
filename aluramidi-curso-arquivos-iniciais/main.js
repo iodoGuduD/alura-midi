@@ -3,9 +3,11 @@
 //3° ouvir o click em todos os buttons
 //4° identificar qual button é e seu respectivo som através do id e tag
 //5° tocar o respectivo som
+
 let buttons = [];
 let sounds = [];
 
+//pode ser que o querySelector funcione com o for dentro de seu parâmetro
 for(i=0; i <= 9; i++){
     
 
