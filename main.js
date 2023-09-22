@@ -11,7 +11,7 @@ buttons = document.querySelectorAll('button');
 sounds = document.querySelectorAll('audio');
 
 for(i = 0; i <= buttons.length; i++){
-    buttons.push([i]);
+    buttons.push(i);
 };
 
 console.log(buttons);
