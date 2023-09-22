@@ -7,15 +7,13 @@
 let buttons = [];
 let sounds = [];
 
-//pode ser que o querySelector funcione com o for dentro de seu parâmetro
-for(i=0; i <= 9; i++){
-    
+buttons = document.querySelectorAll('button');
+sounds = document.querySelectorAll('audio');
 
-    return buttons;
+for(i = 0; i <= buttons.length; i++){
+    buttons.push([i]);
 };
 
-for(i=0; i <= buttons.length; i++){
-
-};
+console.log(buttons);
 
 document.querySelector('#som_tecla_pom').play();
