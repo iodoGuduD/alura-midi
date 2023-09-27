@@ -10,10 +10,19 @@ let sounds = [];
 buttons = document.querySelectorAll('button');
 sounds = document.querySelectorAll('audio');
 
-for(i = 0; i <= buttons.length; i++){
-    buttons.push(i);
+let click = () {
+    for(i = 0; i <= buttons.length; i++){
+        buttons[i].addEventListener('CLICK', () => console.log('clicado'));
+    };
 };
 
-console.log(buttons);
+//qualquer botão toca qualquer som nessa lógica
+if(click === true){
+    for(i = 0; i <= sounds.length; i++){
+        sounds[i].play();
+    };
+};
 
-document.querySelector('#som_tecla_pom').play();
+function tocarSom(element){
+    element.play();
+};
