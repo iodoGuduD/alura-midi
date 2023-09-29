@@ -4,14 +4,10 @@
 //4° identificar qual button é e seu respectivo som através do id e tag
 //5° tocar o respectivo som
 
-let buttons = document.querySelectorAll('button');
+let buttons = document.querySelectorAll('.tecla');
 let sounds = document.querySelectorAll('audio');
 
-let click = () {
-    for(i = 0; i <= buttons.length; i++){
-        buttons[i].addEventListener('CLICK', () => console.log('clicado'));
-    };
-};
+let click = () { for(let i = 0; i <= buttons.length; i++){buttons[i].addEventListener('CLICK', () => console.log('clicado'));};};
 
 //qualquer botão toca qualquer som nessa lógica
 if(click === true){
