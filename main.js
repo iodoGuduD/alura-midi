@@ -4,11 +4,8 @@
 //4° identificar qual button é e seu respectivo som através do id e tag
 //5° tocar o respectivo som
 
-let buttons = [];
-let sounds = [];
-
-buttons = document.querySelectorAll('button');
-sounds = document.querySelectorAll('audio');
+let buttons = document.querySelectorAll('button');
+let sounds = document.querySelectorAll('audio');
 
 let click = () {
     for(i = 0; i <= buttons.length; i++){
