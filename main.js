@@ -8,7 +8,8 @@ let buttons = document.querySelectorAll('.tecla');
 let sounds = document.querySelectorAll('audio');
 
 for(let i = 0; i <= buttons.length; i++){
-    buttons[i].addEventListener('CLICK', () => console.log('clicado'));
+    click = buttons[i].addEventListener('CLICK', () => console.log('clicado'));
+    let soundfier = buttons[i].classList[1];
 };
 
 //qualquer botão toca qualquer som nessa lógica
