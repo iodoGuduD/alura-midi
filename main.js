@@ -5,20 +5,17 @@
 //5° tocar o respectivo som
 
 let buttons = document.querySelectorAll('.tecla');
-let sounds = document.querySelectorAll('audio');
 
 for(let i = 0; i <= buttons.length; i++){
-    click = buttons[i].addEventListener('CLICK', () => console.log('clicado'));
-    let soundfier = buttons[i].classList[1];
-};
+    let button = buttons[i];
+    let soundfier = button.classList[1];
+    let sound = `#som_${soundfier}`;
 
-//qualquer botão toca qualquer som nessa lógica
-if(click === true){
-    for(i = 0; i <= sounds.length; i++){
-        sounds[i].play();
+    function tocarSom(idAudio){
+        document.querySelector(idAudio).play();
     };
-};
 
-function tocarSom(idAudio){
-    document.querySelector(idAudio).play();
+    function click(){
+        button.addEventListener("click", tocarSom(sound));
+    };
 };
