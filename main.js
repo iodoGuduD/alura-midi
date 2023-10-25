@@ -7,9 +7,9 @@
 let buttons = document.querySelectorAll('.tecla');
 
 for(let i = 0; i <= buttons.length; i++){
-    let button = buttons[i];
-    let soundfier = button.classList[1];
-    let sound = `#som_${soundfier}`;
+    const button = buttons[i];
+    const soundfier = button.classList[1];
+    const sound = `#som_${soundfier}`;
 
     function tocarSom(idAudio){
         document.querySelector(idAudio).play();
