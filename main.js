@@ -15,7 +15,13 @@ for(let i = 0; i <= buttons.length; i++){
         document.querySelector(idAudio).play();
     };
 
+    function addClasse(){
+        button.classList.add('ativa');
+    };
+
     function click(){
         button.addEventListener("click", tocarSom(sound));
+        button.addEventListener("space", addClasse());
+        button.addEventListener("enter", addClasse());
     };
 };
